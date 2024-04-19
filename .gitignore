@@ -1,0 +1,15 @@
+/.idea/.gitignore
+/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+/.idea/encodings.xml
+/target/failsafe-reports/failsafe-summary.xml
+/target/classes/de/aa/HelloMojo.class
+/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
+/.idea/jarRepositories.xml
+/.idea/misc.xml
+/target/MyCustomPlugin-1.0-SNAPSHOT.jar
+/target/classes/META-INF/maven/plugin.xml
+/target/plugin-enhanced.xml
+/target/classes/META-INF/maven/de.aa/MyCustomPlugin/plugin-help.xml
+/target/maven-archiver/pom.properties
+/.idea/vcs.xml
