@@ -61,7 +61,28 @@
 
 
         <plugins>
-
+            <plugin>
+                <artifactId>maven-clean-plugin</artifactId>
+                <version>3.3.2</version>
+                <executions>
+                    <execution>
+                        <id>auto-clean</id>
+                        <phase>initialize</phase>
+                        <goals>
+                            <goal>clean</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <filesets>
+                        <fileset>
+                            <directory>your-project-directory/.idea/</directory> <!-- Указывайте путь к вашим файлам, которые нужно игнорировать -->
+                            <directory>your-project-directory/release.properties</directory>
+                            <directory>your-project-directory/target/</directory>
+                        </fileset>
+                    </filesets>
+                </configuration>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-plugin-plugin</artifactId>
@@ -125,6 +146,9 @@
                     </annotationProcessorPaths>
                 </configuration>
             </plugin>
+
+
+
         </plugins>
     </build>
 
